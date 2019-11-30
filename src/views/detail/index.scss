@@ -1,0 +1,52 @@
+.detaildiv{
+    display: flex;
+    flex-direction: column;
+    overflow: auto;
+    
+    .detailimg{
+        width:100%;
+        img{
+            width:100%;
+        }
+    }
+    .detailinfo{
+        padding: 0.1rem;
+        display: flex;
+        flex-direction: column;
+        h3{
+            .tmbiao{
+
+                border: 0.01rem solid #FC3F78;
+                color: #FC3F78;
+                border-radius: 0.02rem;
+                padding: 0 0.05rem;
+                margin-right: 0.05rem;
+                font-size: .12rem;
+            }
+            font-size: 0.16rem;
+            font-weight: 400;
+            padding: 0.1rem 0.06rem;
+            text-align: left;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+        .detailquan{
+            color: #FC4D52;
+            text-align: left;
+            .detaildivafter{
+                font-size: 0.16rem;
+            }
+            .detaildivnum{
+                font-size: 0.20rem;
+            }
+        }
+        .detailbtn{
+            display: flex;
+            justify-content: space-between; 
+            .am-button{
+                padding: 0 0.15rem!important;
+            }
+        }
+    }
+}

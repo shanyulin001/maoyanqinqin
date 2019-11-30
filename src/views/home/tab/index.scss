@@ -1,0 +1,49 @@
+@import '../../../assets/stylesheet/theme.scss';
+@import '../../../assets/stylesheet/reset.css';
+@import '../../../assets/stylesheet/border.scss';
+.tabnavarea{
+    @include border( #ccc, 0 0 1px 0 );
+    height: 0.44rem;
+    margin-bottom: 0.1rem;
+    ul{
+        height: 100%;
+        display: flex;
+        align-items: center;
+        li{
+            flex:1;
+            a{
+                // display: flex;
+                // align-items: center;
+                span{
+                    color: #666;
+                    font-size: 15px;
+                    line-height: 0.44rem;
+                }
+                .fa-caret-down{
+                    color: #666;
+                    font-size: 15px;
+                    line-height: 0.44rem;
+                }
+            }
+            .todayplay, .tomorrowplay{
+                display:block;
+                height: 100%;
+                width: 100%;
+                font-size: 15px;
+                color: #666;
+                text-align: center;
+                line-height: 0.44rem;
+                margin: 0 12px;
+                font-weight: 700;
+                &.active{
+                    color: #EF4238;
+				    border-bottom: 2px solid #ef4238;
+                }
+            }
+
+            .fa-search{
+                color: $theme;
+            }
+        }
+    }
+}

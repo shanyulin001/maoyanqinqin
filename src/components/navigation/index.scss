@@ -1,0 +1,37 @@
+@import '../../assets/stylesheet/theme.scss';
+@import '../../assets/stylesheet/border.scss';
+footer{
+    height: 0.485rem;
+    width: 100%;
+    @include border( #ccc, 1px 0 0 0 );
+    ul{
+        height: 100%;
+        display: flex;
+        justify-content: space-around;
+        align-items:center;
+        li{
+            a{
+                display:flex;
+                flex-direction:column;
+                justify-content: center;
+                i{
+                    font-size: 0.18rem;
+                    color:#696969;
+                    margin-bottom:0.04rem;
+                }
+                span{
+                    font-size:0.12rem;
+                    color:#696969;
+                }
+                &.active{
+                    i{
+                        color:$theme;
+                    }
+                    span{
+                        color:$theme;
+                    }
+                }
+            }
+        }
+    }
+}
